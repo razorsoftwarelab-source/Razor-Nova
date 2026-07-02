@@ -18,6 +18,8 @@ A free, modular music player for Windows with a neon-lit dark/light theme, built
 ---
 
 ## 📁 Full Directory Structure
+
+```
 RazorNova/
 ├── RazorNova.sln
 │
@@ -118,10 +120,9 @@ RazorNova/
 │           └── AboutDialog.xaml.cs
 │
 └── tests/                                       (planned for future)
-├── RazorNova.Playback.Tests/
-├── RazorNova.Library.Tests/
-└── RazorNova.Playlist.Tests/
-
+    ├── RazorNova.Playback.Tests/
+    ├── RazorNova.Library.Tests/
+    └── RazorNova.Playlist.Tests/
 ```
 
 ---
@@ -171,28 +172,27 @@ dotnet build RazorNova.sln
 dotnet run --project src/RazorNova.App
 ```
 
-Adding Music
-
-1. Click Scan Folder... to import a directory (and subfolders).
-2. Or click Add Files... to select individual audio files.
-
----
-
-🧪 Current Status
-
-· Build: ✅ 10 projects, 0 errors
-· Core functionality: ✅ Fully operational
-· Known issues: A runtime exception may appear on startup (under investigation); minor visual polish (custom scrollbar) pending.
+### Adding Music
+1. Click **Scan Folder...** to import a directory (and subfolders).
+2. Or click **Add Files...** to select individual audio files.
 
 ---
 
-📄 License
+## 🧪 Current Status
 
-This project is licensed under the BSD 3-Clause License.
-See the LICENSE file for the full license text.
+- **Build**: ✅ 10 projects, 0 errors
+- **Core functionality**: ✅ Fully operational
+- **Known issues**: A runtime exception may appear on startup (under investigation); minor visual polish (custom scrollbar) pending.
+
+---
+
+## 📄 License
+
+This project is licensed under the BSD 3-Clause License.  
+See the [LICENSE](LICENSE) file for the full license text.
 
 Copyright (c) 2026, Razor Software Lab.
 
 ---
 
-Made with 🐺💜 by Razor Software Lab.
+Made with 🐺💜 by **Razor Software Lab**.
