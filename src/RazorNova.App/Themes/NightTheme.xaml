@@ -1,0 +1,61 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Midnight Purple — Night variant: deep purple-black background,
+         neon magenta/pink accent with a glow effect. Every key here also
+         exists in DayTheme.xaml with different values — App.xaml.cs swaps
+         which single dictionary is merged in at runtime based on
+         IThemeManager.ResolvedTheme, so both files must declare the exact
+         same set of keys. NeonGlowColor/NeonGlowEffect are new keys added
+         for this redesign — DayTheme.xaml must also define them (even if
+         Day's glow is subtler) to keep the key sets identical. -->
+
+    <Color x:Key="WindowBackgroundColor">#12081F</Color>
+    <Color x:Key="SurfaceColor">#1E1230</Color>
+    <Color x:Key="AccentColor">#FF3EC4</Color>
+    <Color x:Key="AccentForegroundColor">#12081F</Color>
+    <Color x:Key="PrimaryTextColor">#F3EAFB</Color>
+    <Color x:Key="SecondaryTextColor">#AD93C9</Color>
+    <Color x:Key="BorderColor">#3B2354</Color>
+    <Color x:Key="DividerColor">#2B1A40</Color>
+    <Color x:Key="HoverOverlayColor">#26FF3EC4</Color>
+    <Color x:Key="PressedOverlayColor">#40FF3EC4</Color>
+    <Color x:Key="DisabledColor">#4A3A5C</Color>
+    <Color x:Key="TitleBarBackgroundColor">#12081F</Color>
+    <Color x:Key="TitleBarButtonHoverColor">#2B1A40</Color>
+    <Color x:Key="TitleBarCloseHoverColor">#C42B1C</Color>
+
+    <!-- New: used by ControlStyles.xaml (in a follow-up edit) to apply a
+         DropShadowEffect glow to accent-colored elements like the Play
+         button and the seek/volume slider thumbs. Defining it here keeps
+         the actual glow color themeable per-theme, same as every other brush. -->
+    <Color x:Key="NeonGlowColor">#FF3EC4</Color>
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource SurfaceColor}" />
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="AccentForegroundBrush" Color="{StaticResource AccentForegroundColor}" />
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="{StaticResource PrimaryTextColor}" />
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="{StaticResource SecondaryTextColor}" />
+    <SolidColorBrush x:Key="AppBorderBrush" Color="{StaticResource BorderColor}" />
+    <SolidColorBrush x:Key="DividerBrush" Color="{StaticResource DividerColor}" />
+    <SolidColorBrush x:Key="HoverOverlayBrush" Color="{StaticResource HoverOverlayColor}" />
+    <SolidColorBrush x:Key="PressedOverlayBrush" Color="{StaticResource PressedOverlayColor}" />
+    <SolidColorBrush x:Key="DisabledBrush" Color="{StaticResource DisabledColor}" />
+    <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="{StaticResource TitleBarBackgroundColor}" />
+    <SolidColorBrush x:Key="TitleBarButtonHoverBrush" Color="{StaticResource TitleBarButtonHoverColor}" />
+    <SolidColorBrush x:Key="TitleBarCloseHoverBrush" Color="{StaticResource TitleBarCloseHoverColor}" />
+
+    <!-- New: the actual glow — a soft, wide, zero-offset drop shadow in the
+         neon color. Not yet referenced anywhere; ControlStyles.xaml needs
+         Effect="{DynamicResource NeonGlowEffect}" added to specific
+         elements (Play button, slider thumbs) in the next file to
+         actually make it visible. BlurRadius/Opacity tuned for a
+         noticeable-but-not-overpowering neon feel at UI scale. -->
+    <DropShadowEffect x:Key="NeonGlowEffect"
+                       Color="{StaticResource NeonGlowColor}"
+                       BlurRadius="16" ShadowDepth="0" Opacity="0.85"/>
+
+    <FontFamily x:Key="PrimaryFontFamily">Segoe UI</FontFamily>
+
+</ResourceDictionary>

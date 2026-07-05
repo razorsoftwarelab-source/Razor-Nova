@@ -1,0 +1,50 @@
+<Window x:Class="RazorNova.App.Views.AboutDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About Razor Nova"
+        Width="360" Height="280"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner">
+
+    <Border CornerRadius="10" Background="{DynamicResource SurfaceBrush}"
+            BorderBrush="{DynamicResource AppBorderBrush}" BorderThickness="1"
+            MouseLeftButtonDown="Root_MouseLeftButtonDown">
+        <Grid Margin="24">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <!-- Brand name and company are deliberately hard-coded
+                     literal strings, not localized resource keys — brand
+                     names stay identical across languages (see the
+                     Localization project's note on this same convention). -->
+                <TextBlock Text="Razor Nova" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center"
+                           Foreground="{DynamicResource PrimaryTextBrush}"/>
+                <TextBlock Text="{Binding VersionText}" FontSize="12" HorizontalAlignment="Center" Margin="0,4,0,0"
+                           Foreground="{DynamicResource SecondaryTextBrush}"/>
+
+                <Border Height="1" Background="{DynamicResource DividerBrush}" Margin="0,16,0,16"/>
+
+                <TextBlock Text="Razor Software Lab" FontSize="14" HorizontalAlignment="Center"
+                           Foreground="{DynamicResource PrimaryTextBrush}"/>
+                <TextBlock Text="&quot;Mind over Code&quot;" FontSize="11" FontStyle="Italic" HorizontalAlignment="Center" Margin="0,2,0,0"
+                           Foreground="{DynamicResource SecondaryTextBrush}"/>
+                <TextBlock HorizontalAlignment="Center" Margin="0,10,0,0" Cursor="Hand">
+                    <Hyperlink NavigateUri="https://www.razorhub.ir" RequestNavigate="Website_RequestNavigate">
+                        <TextBlock Text="www.razorhub.ir" Foreground="{DynamicResource AccentBrush}"/>
+                    </Hyperlink>
+                </TextBlock>
+            </StackPanel>
+
+            <Button Grid.Row="1" Content="Close" HorizontalAlignment="Center" Padding="20,7" Margin="0,16,0,0"
+                    Background="{DynamicResource AccentBrush}" Foreground="{DynamicResource AccentForegroundBrush}" BorderThickness="0"
+                    Click="CloseButton_Click"/>
+        </Grid>
+    </Border>
+</Window>

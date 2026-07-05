@@ -1,0 +1,55 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Midnight Purple — Day variant: pure white background, vivid purple
+         accent. Every key here also exists in NightTheme.xaml with different
+         values — App.xaml.cs swaps which single dictionary is merged in at
+         runtime based on IThemeManager.ResolvedTheme, so both files must
+         declare the exact same set of keys. NeonGlowColor/NeonGlowEffect
+         mirror Night's pattern but tuned much softer — a strong glow reads
+         as harsh on a white background instead of "neon". -->
+
+    <Color x:Key="WindowBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="SurfaceColor">#F4F4F6</Color>
+    <Color x:Key="AccentColor">#8A2BE2</Color>
+    <Color x:Key="AccentForegroundColor">#FFFFFF</Color>
+    <Color x:Key="PrimaryTextColor">#1A1A1A</Color>
+    <Color x:Key="SecondaryTextColor">#5C5C5C</Color>
+    <Color x:Key="BorderColor">#E0E0E0</Color>
+    <Color x:Key="DividerColor">#EBEBEB</Color>
+    <Color x:Key="HoverOverlayColor">#268A2BE2</Color>
+    <Color x:Key="PressedOverlayColor">#408A2BE2</Color>
+    <Color x:Key="DisabledColor">#BDBDBD</Color>
+    <Color x:Key="TitleBarBackgroundColor">#FFFFFF</Color>
+    <Color x:Key="TitleBarButtonHoverColor">#EBEBEB</Color>
+    <Color x:Key="TitleBarCloseHoverColor">#C42B1C</Color>
+
+    <!-- Same glow color as AccentColor, matching NightTheme.xaml's pattern
+         (NeonGlowColor = AccentColor there too). -->
+    <Color x:Key="NeonGlowColor">#8A2BE2</Color>
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackgroundColor}" />
+    <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource SurfaceColor}" />
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+    <SolidColorBrush x:Key="AccentForegroundBrush" Color="{StaticResource AccentForegroundColor}" />
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="{StaticResource PrimaryTextColor}" />
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="{StaticResource SecondaryTextColor}" />
+    <SolidColorBrush x:Key="AppBorderBrush" Color="{StaticResource BorderColor}" />
+    <SolidColorBrush x:Key="DividerBrush" Color="{StaticResource DividerColor}" />
+    <SolidColorBrush x:Key="HoverOverlayBrush" Color="{StaticResource HoverOverlayColor}" />
+    <SolidColorBrush x:Key="PressedOverlayBrush" Color="{StaticResource PressedOverlayColor}" />
+    <SolidColorBrush x:Key="DisabledBrush" Color="{StaticResource DisabledColor}" />
+    <SolidColorBrush x:Key="TitleBarBackgroundBrush" Color="{StaticResource TitleBarBackgroundColor}" />
+    <SolidColorBrush x:Key="TitleBarButtonHoverBrush" Color="{StaticResource TitleBarButtonHoverColor}" />
+    <SolidColorBrush x:Key="TitleBarCloseHoverBrush" Color="{StaticResource TitleBarCloseHoverColor}" />
+
+    <!-- Mild version of Night's glow: same shape (ShadowDepth=0 = uniform
+         halo), much lower BlurRadius/Opacity so it reads as a soft ambient
+         lift rather than an overpowering ring on a bright background. -->
+    <DropShadowEffect x:Key="NeonGlowEffect"
+                       Color="{StaticResource NeonGlowColor}"
+                       BlurRadius="12" ShadowDepth="0" Opacity="0.3"/>
+
+    <FontFamily x:Key="PrimaryFontFamily">Segoe UI</FontFamily>
+
+</ResourceDictionary>

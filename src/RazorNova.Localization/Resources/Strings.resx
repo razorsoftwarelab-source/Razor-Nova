@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <!-- General / App -->
+  <data name="App_Name" xml:space="preserve"><value>Razor Nova</value></data>
+
+  <!-- Playback Controls -->
+  <data name="Play_Button_Tooltip" xml:space="preserve"><value>Play</value></data>
+  <data name="Pause_Button_Tooltip" xml:space="preserve"><value>Pause</value></data>
+  <data name="Stop_Button_Tooltip" xml:space="preserve"><value>Stop</value></data>
+  <data name="Next_Button_Tooltip" xml:space="preserve"><value>Next Track</value></data>
+  <data name="Previous_Button_Tooltip" xml:space="preserve"><value>Previous Track</value></data>
+  <data name="Volume_Mute_Tooltip" xml:space="preserve"><value>Mute</value></data>
+  <data name="Volume_Unmute_Tooltip" xml:space="preserve"><value>Unmute</value></data>
+  <data name="Shuffle_Button_Tooltip" xml:space="preserve"><value>Shuffle</value></data>
+  <data name="Repeat_Off_Tooltip" xml:space="preserve"><value>Repeat: Off</value></data>
+  <data name="Repeat_All_Tooltip" xml:space="preserve"><value>Repeat: All</value></data>
+  <data name="Repeat_One_Tooltip" xml:space="preserve"><value>Repeat: One</value></data>
+
+  <!-- Library -->
+  <data name="Library_Tab_Title" xml:space="preserve"><value>Library</value></data>
+  <data name="Library_SearchBox_Placeholder" xml:space="preserve"><value>Search by title, artist, or album...</value></data>
+  <data name="Library_Column_Title" xml:space="preserve"><value>Title</value></data>
+  <data name="Library_Column_Artist" xml:space="preserve"><value>Artist</value></data>
+  <data name="Library_Column_Album" xml:space="preserve"><value>Album</value></data>
+  <data name="Library_Column_Duration" xml:space="preserve"><value>Duration</value></data>
+  <data name="Library_SortByName" xml:space="preserve"><value>Sort by Name</value></data>
+  <data name="Library_SortByDate" xml:space="preserve"><value>Sort by Date Modified</value></data>
+  <data name="Library_ScanFolder_ButtonLabel" xml:space="preserve"><value>Scan Folder...</value></data>
+  <data name="Library_Empty_Message" xml:space="preserve"><value>Your library is empty. Scan a folder to get started.</value></data>
+
+  <!-- Folder Scan Dialog -->
+  <data name="ScanDialog_Title" xml:space="preserve"><value>Scanning Folder</value></data>
+  <data name="ScanDialog_Scanning_Message" xml:space="preserve"><value>Scanning...</value></data>
+  <data name="ScanDialog_FilesFound" xml:space="preserve"><value>{0} files found</value></data>
+  <data name="ScanDialog_TotalDuration" xml:space="preserve"><value>Total duration: {0}</value></data>
+  <data name="ScanDialog_FailedFiles" xml:space="preserve"><value>{0} files could not be read</value></data>
+  <data name="ScanDialog_Cancel_Button" xml:space="preserve"><value>Cancel</value></data>
+  <data name="ScanDialog_Done_Button" xml:space="preserve"><value>Done</value></data>
+
+  <!-- Playlist -->
+  <data name="Playlist_Tab_Title" xml:space="preserve"><value>Playlist</value></data>
+  <data name="Playlist_Empty_Message" xml:space="preserve"><value>No tracks in the playlist yet.</value></data>
+  <data name="Playlist_AddToPlaylist" xml:space="preserve"><value>Add to Playlist</value></data>
+  <data name="Playlist_NewPlaylist_Button" xml:space="preserve"><value>New Playlist</value></data>
+  <data name="Playlist_Rename_MenuItem" xml:space="preserve"><value>Rename</value></data>
+  <data name="Playlist_Delete_MenuItem" xml:space="preserve"><value>Delete</value></data>
+
+  <!-- Title Bar / Main Window -->
+  <data name="MainWindow_Title" xml:space="preserve"><value>Razor Nova</value></data>
+  <data name="TitleBar_Minimize_Tooltip" xml:space="preserve"><value>Minimize</value></data>
+  <data name="TitleBar_Maximize_Tooltip" xml:space="preserve"><value>Maximize</value></data>
+  <data name="TitleBar_Restore_Tooltip" xml:space="preserve"><value>Restore</value></data>
+  <data name="TitleBar_Close_Tooltip" xml:space="preserve"><value>Close</value></data>
+
+  <!-- Mini Player -->
+  <data name="MiniPlayer_RestoreTooltip" xml:space="preserve"><value>Restore Main Window</value></data>
+
+  <!-- System Tray -->
+  <data name="Tray_Play_MenuItem" xml:space="preserve"><value>Play</value></data>
+  <data name="Tray_Pause_MenuItem" xml:space="preserve"><value>Pause</value></data>
+  <data name="Tray_Next_MenuItem" xml:space="preserve"><value>Next</value></data>
+  <data name="Tray_Previous_MenuItem" xml:space="preserve"><value>Previous</value></data>
+  <data name="Tray_Exit_MenuItem" xml:space="preserve"><value>Exit</value></data>
+  <data name="Tray_Tooltip_NothingPlaying" xml:space="preserve"><value>Razor Nova — Nothing Playing</value></data>
+
+  <!-- About Dialog -->
+  <data name="About_Title" xml:space="preserve"><value>About Razor Nova</value></data>
+  <data name="About_AppName" xml:space="preserve"><value>Razor Nova</value></data>
+  <data name="About_Company" xml:space="preserve"><value>Razor Software Lab</value></data>
+  <data name="About_Website" xml:space="preserve"><value>www.razorhub.ir</value></data>
+  <data name="About_Version_Label" xml:space="preserve"><value>Version {0}</value></data>
+  <data name="About_Close_Button" xml:space="preserve"><value>Close</value></data>
+
+  <!-- Settings -->
+  <data name="Settings_Language_Label" xml:space="preserve"><value>Language</value></data>
+  <data name="Settings_Language_English" xml:space="preserve"><value>English</value></data>
+  <data name="Settings_Language_Persian" xml:space="preserve"><value>فارسی</value></data>
+  <data name="Settings_Theme_Label" xml:space="preserve"><value>Theme</value></data>
+  <data name="Settings_Theme_Night" xml:space="preserve"><value>Night</value></data>
+  <data name="Settings_Theme_Day" xml:space="preserve"><value>Day</value></data>
+  <data name="Settings_Theme_System" xml:space="preserve"><value>Follow System</value></data>
+
+  <!-- Errors -->
+  <data name="Error_Generic_Title" xml:space="preserve"><value>Something went wrong</value></data>
+  <data name="Error_FileNotFound" xml:space="preserve"><value>File not found.</value></data>
+  <data name="Error_UnsupportedFormat" xml:space="preserve"><value>This file format is not supported.</value></data>
+</root>

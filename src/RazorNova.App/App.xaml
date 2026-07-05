@@ -1,0 +1,25 @@
+<Application x:Class="RazorNova.App.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:RazorNova.App.Converters">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Static, never-changing dictionaries: control styles
+                     (buttons, tabs, sliders) shared across every window. -->
+                <ResourceDictionary Source="Styles/ControlStyles.xaml" />
+
+                <!-- The Night/Day theme dictionary (Themes/) is intentionally
+                     NOT listed here — it's merged/swapped at runtime by
+                     App.xaml.cs based on IThemeManager.ResolvedTheme,
+                     since the active one can change while the app is running. -->
+            </ResourceDictionary.MergedDictionaries>
+
+            <converters:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter" />
+            <converters:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+            <converters:TimeSpanToShortStringConverter x:Key="TimeSpanToShortStringConverter" />
+            <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
+            <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

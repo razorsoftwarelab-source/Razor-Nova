@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12.0</LangVersion>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>RazorNova.App</RootNamespace>
+    <AssemblyName>RazorNova</AssemblyName>
+    <ApplicationIcon>Assets\RazorNova.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+    <Company>Razor Software Lab</Company>
+    <Copyright>2026 Razor Software Lab</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RazorNova.Core\RazorNova.Core.csproj" />
+    <ProjectReference Include="..\RazorNova.Playback\RazorNova.Playback.csproj" />
+    <ProjectReference Include="..\RazorNova.Metadata\RazorNova.Metadata.csproj" />
+    <ProjectReference Include="..\RazorNova.Data\RazorNova.Data.csproj" />
+    <ProjectReference Include="..\RazorNova.Library\RazorNova.Library.csproj" />
+    <ProjectReference Include="..\RazorNova.Playlist\RazorNova.Playlist.csproj" />
+    <ProjectReference Include="..\RazorNova.Theme\RazorNova.Theme.csproj" />
+    <ProjectReference Include="..\RazorNova.Localization\RazorNova.Localization.csproj" />
+    <ProjectReference Include="..\RazorNova.Platform\RazorNova.Platform.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\RazorNova.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
