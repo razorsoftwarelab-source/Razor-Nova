@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RazorNova.App/RazorNova.App.csproj" />
+    <Project Path="src/RazorNova.Core/RazorNova.Core.csproj" />
+    <Project Path="src/RazorNova.Data/RazorNova.Data.csproj" />
+    <Project Path="src/RazorNova.Library/RazorNova.Library.csproj" />
+    <Project Path="src/RazorNova.Localization/RazorNova.Localization.csproj" />
+    <Project Path="src/RazorNova.Metadata/RazorNova.Metadata.csproj" />
+    <Project Path="src/RazorNova.Platform/RazorNova.Platform.csproj" />
+    <Project Path="src/RazorNova.Playback/RazorNova.Playback.csproj" />
+    <Project Path="src/RazorNova.Playlist/RazorNova.Playlist.csproj" />
+    <Project Path="src/RazorNova.Theme/RazorNova.Theme.csproj" />
+  </Folder>
+</Solution>
