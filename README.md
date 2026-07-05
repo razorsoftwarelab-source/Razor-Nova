@@ -65,7 +65,7 @@ RazorNova/
 │   │   ├── RazorNova.Data.csproj
 │   │   ├── DatabaseContext.cs
 │   │   ├── TrackRepository.cs
-│   │   ├── PlaylistRepository.cs
+│   │   ├── PlaylistRepository.cs                (شامل CleanCorruptedPlaylistNamesAsync)
 │   │   └── SettingsRepository.cs
 │   │
 │   ├── RazorNova.Library/                       [net8.0, Core only]
@@ -87,7 +87,7 @@ RazorNova/
 │   │   │   └── Strings.fa.resx                  (Persian)
 │   │   └── LocalizationService.cs
 │   │
-│   ├── RazorNova.Platform/                      [net8.0-windows + UseWPF + H.NotifyIcon.Wpf 2.4.1]
+│   ├── RazorNova.Platform/                      [net8.0-windows + UseWPF + H.NotifyIcon.Wpf 2.4.1 + System.Drawing.Common]
 │   │   ├── RazorNova.Platform.csproj
 │   │   ├── MediaKeyListener.cs
 │   │   └── TrayIconService.cs
@@ -96,6 +96,7 @@ RazorNova/
 │       ├── RazorNova.App.csproj
 │       ├── App.xaml
 │       ├── App.xaml.cs                          (composition root)
+│       ├── Assets/                              (آیکون‌ها، از جمله .ico برای exe/Tray)
 │       ├── ViewModels/
 │       │   ├── PlayerControlsViewModel.cs       (singleton, shared with MiniPlayer)
 │       │   ├── LibraryViewModel.cs
@@ -116,14 +117,13 @@ RazorNova/
 │           ├── MainWindow.xaml.cs
 │           ├── MiniPlayerWindow.xaml
 │           ├── MiniPlayerWindow.xaml.cs
-│           ├── AboutDialog.xaml
-│           └── AboutDialog.xaml.cs
+│           ├── AboutDialog.xaml                 (نسخه در حال نمایش، تأیید شده)
+│           └── AboutDialog.xaml.cs              (VersionText از Assembly، تأیید شده)
 │
 └── tests/                                       (planned for future)
     ├── RazorNova.Playback.Tests/
     ├── RazorNova.Library.Tests/
     └── RazorNova.Playlist.Tests/
-```
 
 ---
 
